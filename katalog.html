@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku - Perpustakaan Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-blue-50 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 flex justify-between">
+        <h1 class="text-2xl font-bold">Katalog Buku</h1>
+        <a href="dashboard.html" class="text-white">Dashboard</a>
+    </header>
+    <main class="container mx-auto p-4">
+        <div class="mb-4">
+            <input type="text" id="search" placeholder="Cari judul, penulis..." class="p-2 border rounded w-full">
+            <select id="category" class="p-2 border rounded ml-2">
+                <option value="">Semua Kategori</option>
+            </select>
+            <select id="status" class="p-2 border rounded ml-2">
+                <option value="">Semua Status</option>
+                <option value="available">Tersedia</option>
+                <option value="borrowed">Dipinjam</option>
+            </select>
+            <button id="searchBtn" class="bg-blue-500 text-white px-4 py-2 rounded ml-2">Cari</button>
+        </div>
+        <div id="booksList" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+        <button id="loadMore" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Load More</button>
+    </main>
+    <script type="module" src="assets/js/catalog.js"></script>
+</body>
+</html>

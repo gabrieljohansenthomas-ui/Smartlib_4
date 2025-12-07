@@ -1,0 +1,186 @@
+{
+  "users": [
+    {
+      "uid": "admin123",
+      "displayName": "Admin SMKN3",
+      "email": "admin@smkn3m.com",
+      "role": "admin",
+      "active": true,
+      "joinedAt": "2023-01-01T00:00:00Z"
+    },
+    {
+      "uid": "member123",
+      "displayName": "Siswa A",
+      "email": "siswa@smkn3m.com",
+      "role": "member",
+      "active": true,
+      "joinedAt": "2023-02-01T00:00:00Z"
+    },
+    {
+      "uid": "member456",
+      "displayName": "Siswa B",
+      "email": "siswa2@smkn3m.com",
+      "role": "member",
+      "active": true,
+      "joinedAt": "2023-03-01T00:00:00Z"
+    }
+  ],
+  "books": [
+    {
+      "id": "book1",
+      "title": "Matematika Dasar",
+      "author": "Penulis A",
+      "isbn": "123456789",
+      "category": "Matematika",
+      "stock": 10,
+      "availableStock": 8,
+      "coverUrl": "https://example.com/cover1.jpg",
+      "description": "Buku matematika untuk siswa SMK."
+    },
+    {
+      "id": "book2",
+      "title": "Fisika Modern",
+      "author": "Penulis B",
+      "isbn": "987654321",
+      "category": "Fisika",
+      "stock": 5,
+      "availableStock": 5,
+      "coverUrl": "https://example.com/cover2.jpg",
+      "description": "Buku fisika lanjutan."
+    },
+    {
+      "id": "book3",
+      "title": "Bahasa Indonesia",
+      "author": "Penulis C",
+      "isbn": "456789123",
+      "category": "Bahasa",
+      "stock": 15,
+      "availableStock": 12,
+      "coverUrl": "https://example.com/cover3.jpg",
+      "description": "Buku bahasa untuk siswa."
+    },
+    {
+      "id": "book4",
+      "title": "Kimia Organik",
+      "author": "Penulis D",
+      "isbn": "789123456",
+      "category": "Kimia",
+      "stock": 7,
+      "availableStock": 7,
+      "coverUrl": "https://example.com/cover4.jpg",
+      "description": "Buku kimia dasar."
+    },
+    {
+      "id": "book5",
+      "title": "Sejarah Dunia",
+      "author": "Penulis E",
+      "isbn": "321654987",
+      "category": "Sejarah",
+      "stock": 20,
+      "availableStock": 18,
+      "coverUrl": "https://example.com/cover5.jpg",
+      "description": "Buku sejarah lengkap."
+    },
+    {
+      "id": "book6",
+      "title": "Biologi Molekuler",
+      "author": "Penulis F",
+      "isbn": "654987321",
+      "category": "Biologi",
+      "stock": 8,
+      "availableStock": 8,
+      "coverUrl": "https://example.com/cover6.jpg",
+      "description": "Buku biologi modern."
+    },
+    {
+      "id": "book7",
+      "title": "Ekonomi Mikro",
+      "author": "Penulis G",
+      "isbn": "147258369",
+      "category": "Ekonomi",
+      "stock": 12,
+      "availableStock": 10,
+      "coverUrl": "https://example.com/cover7.jpg",
+      "description": "Buku ekonomi untuk SMK."
+    },
+    {
+      "id": "book8",
+      "title": "Sastra Indonesia",
+      "author": "Penulis H",
+      "isbn": "963852741",
+      "category": "Sastra",
+      "stock": 9,
+      "availableStock": 9,
+      "coverUrl": "https://example.com/cover8.jpg",
+      "description": "Kumpulan karya sastra."
+    },
+    {
+      "id": "book9",
+      "title": "Teknologi Informasi",
+      "author": "Penulis I",
+      "isbn": "852741963",
+      "category": "TI",
+      "stock": 6,
+      "availableStock": 4,
+      "coverUrl": "https://example.com/cover9.jpg",
+      "description": "Buku TI dasar."
+    },
+    {
+      "id": "book10",
+      "title": "Geografi Dunia",
+      "author": "Penulis J",
+      "isbn": "741963852",
+      "category": "Geografi",
+      "stock": 11,
+      "availableStock": 11,
+      "coverUrl": "https://example.com/cover10.jpg",
+      "description": "Buku geografi lengkap."
+    }
+  ],
+  "loans": [
+    {
+      "id": "loan1",
+      "userId": "member123",
+      "bookId": "book1",
+      "status": "approved",
+      "requestAt": "2023-10-01T00:00:00Z",
+      "approvedAt": "2023-10-02T00:00:00Z",
+      "dueDate": "2023-10-16T00:00:00Z"
+    },
+    {
+      "id": "loan2",
+      "userId": "member456",
+      "bookId": "book2",
+      "status": "returned",
+      "requestAt": "2023-09-15T00:00:00Z",
+      "approvedAt": "2023-09-16T00:00:00Z",
+      "dueDate": "2023-09-30T00:00:00Z",
+      "returnedAt": "2023-09-25T00:00:00Z"
+    },
+    {
+      "id": "loan3",
+      "userId": "member123",
+      "bookId": "book3",
+      "status": "requested",
+      "requestAt": "2023-10-10T00:00:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review1",
+      "userId": "member123",
+      "bookId": "book1",
+      "rating": 5,
+      "review": "Buku sangat membantu!",
+      "createdAt": "2023-10-05T00:00:00Z"
+    },
+    {
+      "id": "review2",
+      "userId": "member456",
+      "bookId": "book2",
+      "rating": 4,
+      "review": "Bagus, tapi perlu lebih detail.",
+      "createdAt": "2023-09-20T00:00:00Z"
+    }
+  ]
+}

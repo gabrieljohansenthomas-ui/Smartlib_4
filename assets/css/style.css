@@ -1,0 +1,17 @@
+/* Tambahan styling untuk Tailwind. Tema biru-putih. */
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #1e40af, #3b82f6);
+}
+
+button {
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
